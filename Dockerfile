@@ -9,3 +9,4 @@ COPY . /app/pipeline/
 WORKDIR /app/pipeline/
 
 CMD ["/bin/bash"]
+
