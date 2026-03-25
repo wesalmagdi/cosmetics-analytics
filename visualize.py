@@ -1,7 +1,13 @@
+import sys
+import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+file_path = sys.argv[1]
+df = pd.read_csv(file_path)
+
 num_cols = df.select_dtypes('number').columns
+
 fig, ax = plt.subplots(1, 3, figsize=(18, 5))
 
 sns.boxplot(y=df[num_cols[0]], ax=ax[0])
