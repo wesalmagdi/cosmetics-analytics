@@ -2,10 +2,10 @@
 ## Assignment #1 — Spring 2026  
 
 **Team Members:**  
-1. Member 1 – Name  
-2. Member 2 – Name  
-3. Member 3 – Name  
-4. Member 4 – Rama Mohamed  
+1. Member 1 – Wesal Magdy
+2. Member 2 – Rana Osman
+3. Member 3 – Raneem Khaled
+4. Member 4 – Rama Mousa  
 
 ---
 
@@ -24,3 +24,45 @@ The pipeline processes a raw dataset (`en.openbeautyfacts.org.products.csv`) and
 ---
 
 ## **Folder Structure**
+customer-analytics/
+├── Dockerfile
+├── ingest.py
+├── preprocess.py
+├── analytics.py
+├── visualize.py
+├── cluster.py
+├── summary.sh
+├── README.md
+└── results/ # Generated outputs
+
+
+---
+
+## **Docker Setup**
+
+We use **Python 3.11-slim** as the base image and install all necessary packages:
+
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scikit-learn  
+- scipy  
+- requests  
+
+**Dockerfile highlights:**
+
+```dockerfile
+FROM python:3.11-slim
+
+# Install dependencies
+RUN pip install pandas numpy matplotlib seaborn scikit-learn scipy requests
+
+# Set working directory
+WORKDIR /app/pipeline
+
+# Copy all scripts into container
+COPY . /app/pipeline/
+
+# Start interactive bash by default
+CMD ["bash"]
