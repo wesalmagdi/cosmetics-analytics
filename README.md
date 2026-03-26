@@ -33,7 +33,7 @@ customer-analytics/
 ├── cluster.py
 ├── summary.sh
 ├── README.md
-└── results/ # Generated outputs
+└── results/ 
 
 
 ---
@@ -65,4 +65,4 @@ WORKDIR /app/pipeline
 COPY . /app/pipeline/
 
 # Start interactive bash by default
-CMD ["bash"]
+CMD ["/bin/bash"]
