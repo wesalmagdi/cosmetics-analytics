@@ -52,7 +52,7 @@ We use **Python 3.11-slim** as the base image and install all necessary packages
 
 ---
 
-<
+
 ## **Dockerfile highlights:**
 ```markdown
 
@@ -93,7 +93,7 @@ The project is designed to run as a continuous pipeline. By executing the `summa
 
 This section demonstrates the successful execution of the full analytics pipeline. All outputs were automatically extracted into the `results/` folder via the `summary.sh` automation script.
 
-### 1. K-Means Clustering Results (Rama Mohamed)
+### 1. K-Means Clustering Results 
 The `cluster.py` script successfully partitioned the cosmetics dataset into three distinct groups. The distribution below identifies a dominant mass-market category, a secondary formulation group, and a small set of specialized outliers.
 
 | Category | Sample Count | Significance |
