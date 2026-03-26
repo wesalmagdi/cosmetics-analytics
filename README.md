@@ -52,18 +52,10 @@ We use **Python 3.11-slim** as the base image and install all necessary packages
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+<
+## **Dockerfile highlights:**
+```markdown
 
-## **Dockerfile highlights:**
-=======
-## **Dockerfile highlights:**
-```markdown
->>>>>>> 3af76d55c13a743b52562911cf173e57bc0b666f
-=======
-## **Dockerfile highlights:**
-```markdown
->>>>>>> 3af76d55c13a743b52562911cf173e57bc0b666f
 
 ```dockerfile
 FROM python:3.11-slim
@@ -80,8 +72,7 @@ COPY . /app/pipeline/
 # Start interactive bash by default
 CMD ["/bin/bash"]
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 ### **🔄 Automated Execution Flow**
 =======
