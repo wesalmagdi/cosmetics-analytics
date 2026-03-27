@@ -7,6 +7,7 @@ import subprocess
 file_path = sys.argv[1]
 df = pd.read_csv(file_path)
 
+df = df[(df['brand'] != 'unknown') & (df['country'] != 'unknown')]
 fig, ax = plt.subplots(1, 3, figsize=(18, 5))
 
 top_brands = df['brand'].value_counts().nlargest(5).index
