@@ -82,7 +82,7 @@ CMD ["/bin/bash"]
  ```dockerfile
    docker run -it <your-dockerhub-username>/cosmetics-analytics:latest
  ```
-##**Build and Run Locally**
+**Build and Run Locally**
 1. Navigate to the project root:
 ```dockerfile
    cd customer-analytics
